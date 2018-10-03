@@ -53,6 +53,9 @@ aws dynamodb put-item \\
 # create all table
 tablesnames = JSON.parse(exec("jaws dynamodb list-tables").toString()).TableNames
 
+
+#createTable "AdsJobInfo"
+#dumpData "AdsJobInfo"
 #createTable tablename for tablename in tablesnames
 
 for tablename in tablesnames
